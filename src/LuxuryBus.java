@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class LuxuryBus extends Bus{
     public LuxuryBus(String plateNumber) {
         super("Luxury Bus", plateNumber, 14, 3, 7, new Seat[14][3]);
