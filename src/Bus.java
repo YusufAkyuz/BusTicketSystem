@@ -8,13 +8,13 @@ abstract class Bus {
     private int availableSeatCount;
     protected Seat [][] seatLayout;
 
-    public Bus(String busType, String plateNumber, int row, int column, int midDoor, int availableSeatCount, Seat [][] seatLayout) {
+    public Bus(String busType, String plateNumber, int row, int column, int midDoor, Seat [][] seatLayout) {
         this.busType = busType;
         this.plateNumber = plateNumber;
         this.row = row;
         this.column = column;
         this.midDoor = midDoor;
-        this.availableSeatCount = availableSeatCount;
+        this.availableSeatCount = row * column -2;
         this.seatLayout = seatLayout;
 
     int forSeatNumber = 1;
